@@ -18,14 +18,13 @@ Methods :
 2) long driver(Scanner in) : reads the input from the scanner object, based on the input string it cals the respective method.
     and updated the rv value(return value) that is returned by the driver method;
 3) timer() : that computes the time taken by the methods. It is used around the method cals to compute the time taken by the
-    method;
+    method.
 4) method() : similar to the timer() method, computes the memory used by the method.
 5) insert(long id, int[] categories) : inserts a customer into the hashmaps userInfo if the customer doesn't already exist,
     for each of the categories of the new customer if it is present in the customersInCategory map, gets the corresponding TreeSet
     and adds the new customer to it. If the category is not present in the customersInCategory map creates a new TreeSet adds the
     new customer object to it and puts the category, TreeSet pair into the customersInCategory map. Also checks if the key number of categories exists in the mao customersWithNoOfCategories, if it is present gets the TreeSet corresponding to it and adds the new
     customer object to it, else it will create a new TreeSet, adds the customer object to it and puts the no of categories and corresponding treeset into the hashmap.
-
 6) int find(long id) : takes the customer id as the argument and returns the amount spent by the customer as an integer. If customer
     is not present then it returns -1.
 7) int delete(long id) : if the customer exists then removes it from all three hashmaps and returns the amount spent by the customer
